@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="JOHN MARK CAMANCHO - Full-Stack Web Developer specializing in creating dynamic web applications with modern technologies">
+    <meta name="keywords" content="web developer, full-stack developer, JavaScript, HTML, CSS, portfolio">
+    <meta name="author" content="JOHN MARK CAMANCHO">
+    <title>John Mark's Portfolio | Full-Stack Web Developer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">John Mark's Portfolio</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-greeting">
+                    <span>Hello, I'm</span>
+                    <span class="wave">👋</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">JOHN MARK CAMANCHO</span>
+                </h1>
+                <p class="hero-description">
+                    Full-Stack Web Developer passionate about creating beautiful, functional, and user-friendly web
+                    applications.
+                    I transform ideas into reality through clean code and innovative solutions.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-dot dot-red"></div>
+                            <div class="window-dot dot-yellow"></div>
+                            <div class="window-dot dot-green"></div>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span class="code-text"><span class="keyword">const</span> <span
+                                        class="function">developer</span> = {</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                <span class="code-text"> name: <span class="string">"JOHN MARK"</span>,</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">3</span>
+                                <span class="code-text"> role: <span class="string">"Full-Stack
+                                        Developer"</span>,</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">4</span>
+                                <span class="code-text"> skills: [</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">5</span>
+                                <span class="code-text"> <span class="string">"JavaScript"</span>,</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">6</span>
+                                <span class="code-text"> <span class="string">"HTML & CSS"</span>,</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">7</span>
+                                <span class="code-text"> <span class="string">"Web Design"</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">8</span>
+                                <span class="code-text"> ],</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">9</span>
+                                <span class="code-text"> passion: <span class="string">"Building Amazing Web
+                                        Experiences"</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">10</span>
+                                <span class="code-text">};</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">11</span>
+                                <span class="code-text"></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">12</span>
+                                <span class="code-text"><span class="comment">// Let's build something great!
+                                        🚀</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="section-header">
+            <span class="section-tag">MY EXPERTISE</span>
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-description">
+                A comprehensive toolkit for building modern web applications from concept to deployment
+            </p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3 class="skill-title">Frontend Development</h3>
+                <p class="skill-description">
+                    Creating responsive and interactive user interfaces with modern web technologies
+                </p>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Responsive Design</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">⚙️</div>
+                <h3 class="skill-title">Backend Development</h3>
+                <p class="skill-description">
+                    Building robust server-side applications and RESTful APIs
+                </p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">API Design</span>
+                    <span class="skill-tag">Database</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">💾</div>
+                <h3 class="skill-title">Data Management</h3>
+                <p class="skill-description">
+                    Designing efficient data structures and storage solutions
+                </p>
+                <div class="skill-tags">
+                    <span class="skill-tag">LocalStorage</span>
+                    <span class="skill-tag">JSON</span>
+                    <span class="skill-tag">Data Modeling</span>
+                    <span class="skill-tag">CRUD Operations</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🎭</div>
+                <h3 class="skill-title">UI/UX Design</h3>
+                <p class="skill-description">
+                    Crafting beautiful and intuitive user experiences
+                </p>
+                <div class="skill-tags">
+                    <span class="skill-tag">User Research</span>
+                    <span class="skill-tag">Wireframing</span>
+                    <span class="skill-tag">Prototyping</span>
+                    <span class="skill-tag">Accessibility</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🔧</div>
+                <h3 class="skill-title">Development Tools</h3>
+                <p class="skill-description">
+                    Leveraging modern tools for efficient development workflows
+                </p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Chrome DevTools</span>
+                    <span class="skill-tag">npm</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🚀</div>
+                <h3 class="skill-title">Performance Optimization</h3>
+                <p class="skill-description">
+                    Ensuring fast, efficient, and scalable applications
+                </p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Code Optimization</span>
+                    <span class="skill-tag">Lazy Loading</span>
+                    <span class="skill-tag">Caching</span>
+                    <span class="skill-tag">SEO</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="section-header">
+            <span class="section-tag">FEATURED WORK</span>
+            <h2 class="section-title">My Project</h2>
+            <p class="section-description">
+                A showcase of my recent work and personal projects
+            </p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+            <img src="project-hero.svg" alt="Project Hero"
+                style="width: 100%; height: auto; border-radius: var(--radius-lg);">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="section-header">
+            <span class="section-tag">GET IN TOUCH</span>
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-description">
+                Have a project in mind? Let's discuss how we can work together
+            </p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p class="hero-description">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                    vision.
+                </p>
+
+                <div class="contact-methods">
+                    <div class="contact-method" onclick="window.location.href='mailto:johnmark@example.com'">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>johnmark@example.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method" onclick="window.open('https://github.com/johnmarkcamancho', '_blank')">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>GitHub</h4>
+                            <p>@johnmarkcamancho</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method"
+                        onclick="window.open('https://linkedin.com/in/johnmarkcamancho', '_blank')">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>LinkedIn</h4>
+                            <p>JOHN MARK CAMANCHO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="your@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control" placeholder="Tell me about your project..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="logo">Jiemm's Portfolio</div>
+            <p style="color: var(--text-secondary); margin: 0;">
+                © 2026 Jiemm's Portfolio. All rights reserved.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/johnmarkcamancho" target="_blank" class="social-btn" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/johnmarkcamancho" target="_blank" class="social-btn" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/johnmarkcamancho" target="_blank" class="social-btn" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:johnmark@example.com" class="social-btn" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

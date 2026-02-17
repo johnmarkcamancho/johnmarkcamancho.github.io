@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- 1. BACKGROUND SKY STRIPES -->
+  <rect x="25" y="25" width="750" height="60" fill="black" />
+  <rect x="25" y="85" width="750" height="50" fill="#8A2BE2" /> <!-- Purple -->
+  <rect x="25" y="135" width="750" height="50" fill="#FF0000" /> <!-- Red -->
+  <rect x="25" y="185" width="750" height="50" fill="#FF8C00" /> <!-- Orange -->
+  <rect x="25" y="235" width="750" height="50" fill="#FFFF00" /> <!-- Yellow -->
+  <rect x="25" y="285" width="750" height="50" fill="#F0E68C" /> <!-- Light Yellow -->
+  
+  <!-- 2. SUN (Concentric Circles) -->
+  <circle cx="580" cy="180" r="85" fill="#FF0000" /> <!-- Red Outer -->
+  <circle cx="580" cy="180" r="65" fill="#FFA500" /> <!-- Orange -->
+  <circle cx="580" cy="180" r="45" fill="#FFFF00" /> <!-- Yellow -->
+  <circle cx="580" cy="180" r="20" fill="#FF0000" /> <!-- Red Center -->
+
+  <!-- 3. WHITE GROUND/SNOW -->
+  <rect x="25" y="335" width="750" height="240" fill="white" />
+
+  <!-- 4. MOUNTAINS LEFT -->
+  <!-- Main Blue Body -->
+  <polygon points="25,300 220,150 420,350 25,500" fill="#0000FF" />
+  
+  <!-- Green Triangle Peak Fragment -->
+  <polygon points="180,180 220,150 250,220" fill="#008000" />
+  
+  <!-- Brown Triangle Fragment -->
+  <polygon points="220,150 280,180 250,220" fill="#8B4513" />
+
+  <!-- Black Shadow Left Edge -->
+  <polygon points="25,280 100,250 25,350" fill="black" />
+  
+  <!-- Cyan/Light Blue Lower Facet -->
+  <polygon points="25,450 350,550 25,600" fill="#00BFFF" />
+  
+  <!-- Dark Blue Shard -->
+  <polygon points="80,550 250,570 300,530" fill="#000080" />
+
+  <!-- Abstract Blue Shard overlapping center -->
+  <polygon points="300,300 400,400 300,500" fill="#1E90FF" />
+
+  <!-- 5. MOUNTAINS RIGHT -->
+  <!-- Main Light Blue Body -->
+  <polygon points="450,400 650,250 775,350 775,550 450,550" fill="#1E90FF" />
+  
+  <!-- Dark Blue Peak Shadow -->
+  <polygon points="650,250 775,300 700,400" fill="#0000CD" />
+  
+  <!-- Green Slope -->
+  <polygon points="650,450 775,420 775,480" fill="#008000" />
+  
+  <!-- Brown Flat Plane -->
+  <polygon points="450,400 600,450 550,500" fill="#8B4513" />
+  
+  <!-- Black Shadow Far Right -->
+  <polygon points="700,350 775,320 775,400" fill="black" />
+  
+  <!-- Cyan Lower Right Corner -->
+  <polygon points="500,550 775,550 775,600 550,600" fill="#00BFFF" />
+
+  <!-- 6. PENGUIN CENTER -->
+  <g transform="translate(400, 500)">
+    <!-- Red Feet/Tail -->
+    <polygon points="-20,40 20,40 0,60" fill="red" />
+    
+    <!-- Wings Black -->
+    <polygon points="-40,10 -15,10 -25,30" fill="black" /> <!-- Left Wing -->
+    <polygon points="40,10 15,10 25,30" fill="black" />   <!-- Right Wing -->
+    
+    <!-- Body Black -->
+    <path d="M-25,40 L-25,0 Q0,-40 25,0 L25,40 Z" fill="black" />
+    
+    <!-- White Belly -->
+    <path d="M-15,40 L-15,10 Q0,-10 15,10 L15,40 Z" fill="white" />
+    
+    <!-- Head Detail / Beak (Optional, vague in reference) -->
+    <path d="M-5,-10 L5,-10 L0,-5 Z" fill="orange" />
+  </g>
+
+  <!-- 7. BORDER FRAME (Matches the white border in image) -->
+  <rect x="0" y="0" width="800" height="600" fill="none" stroke="white" stroke-width="50" />
+</svg>
