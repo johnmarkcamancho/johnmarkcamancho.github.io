@@ -969,8 +969,8 @@ a:hover {
   }
 
   .project-hero-img {
-    width: 80%;
-    max-width: 350px;
+    width: 100%;
+    max-width: none;
     margin: 0 auto;
     box-shadow: var(--shadow-md);
   }
@@ -1009,6 +1009,6 @@ a:hover {
   }
 
   .project-hero-img {
-    width: 85%;
+    width: 100%;
   }
 }
