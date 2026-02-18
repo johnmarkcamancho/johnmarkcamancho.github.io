@@ -1084,3 +1084,10 @@ a:hover {
   opacity: 0.9;
   transform: scale(1.02);
 }
+
+.caption-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+  line-height: 1.5;
+}
