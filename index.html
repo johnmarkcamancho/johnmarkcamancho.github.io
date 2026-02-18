@@ -23,15 +23,34 @@
 
 <body>
 
+    <!-- Left Sidebar -->
+    <div class="left-sidebar">
+        <div class="sidebar-line"></div>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/johnmarkcamancho" target="_blank" class="sidebar-icon"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/johnmarkcamancho" target="_blank" class="sidebar-icon"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://twitter.com/johnmarkcamancho" target="_blank" class="sidebar-icon"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="mailto:johnmarkcamancho817@gmail.com" class="sidebar-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="sidebar-line"></div>
+        <div class="copyright-text">© John Mark. 2026</div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="logo">John Mark's Portfolio</div>
+            <div class="logo-text">
+                <span class="logo-icon">J</span>John Mark
+            </div>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home">About me</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn-download">Download CV</a></li>
             </ul>
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
@@ -43,97 +62,42 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <div class="hero-greeting">
-                    <span>Hello, I'm</span>
-                    <span class="wave">👋</span>
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-buttons-top">
+                    <button class="icon-circle"><i class="fas fa-mobile-alt"></i></button>
+                    <button class="icon-circle"><i class="fas fa-envelope"></i></button>
                 </div>
-                <h1 class="hero-title">
-                    <span class="gradient-text">JOHN MARK CAMANCHO</span>
-                </h1>
+
+                <p class="greeting">Hello, My name is</p>
+                <h1 class="hero-name">John Mark<br>G. Camancho</h1>
+                <h2 class="hero-role">Full-Stack Web Developer</h2>
+
                 <p class="hero-description">
-                    Full-Stack Web Developer passionate about creating beautiful, functional, and user-friendly web
-                    applications.
-                    I transform ideas into reality through clean code and innovative solutions.
+                    I design and develop services for customers of all sizes,
+                    specializing in creating stylish, modern websites, web services and online stores.
                 </p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="scrollToSection('projects')">
-                        <span>View My Work</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
-                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
-                        <span>Get In Touch</span>
-                        <i class="fas fa-envelope"></i>
-                    </button>
-                </div>
+
+                <button class="btn-primary-pill" onclick="scrollToSection('contact')">
+                    Start a project request
+                </button>
             </div>
 
-            <div class="hero-visual">
-                <div class="hero-card">
-                    <div class="code-window">
-                        <div class="window-header">
-                            <div class="window-dot dot-red"></div>
-                            <div class="window-dot dot-yellow"></div>
-                            <div class="window-dot dot-green"></div>
-                        </div>
-                        <div class="code-content">
-                            <div class="code-line">
-                                <span class="line-number">1</span>
-                                <span class="code-text"><span class="keyword">const</span> <span
-                                        class="function">developer</span> = {</span>
-                            </div>
-                            <div class="code-line">
-                                <span class="line-number">2</span>
-                                <span class="code-text"> name: <span class="string">"JOHN MARK"</span>,</span>
-                            </div>
-                            <div class="code-line">
-                                <span class="line-number">3</span>
-                                <span class="code-text"> role: <span class="string">"Full-Stack
-                                        Developer"</span>,</span>
-                            </div>
-                            <div class="code-line">
-                                <span class="line-number">4</span>
-                                <span class="code-text"> skills: [</span>
-                            </div>
-                            <div class="code-line">
-                                <span class="line-number">5</span>
-                                <span class="code-text"> <span class="string">"JavaScript"</span>,</span>
-                            </div>
-                            <div class="code-line">
-                                <span class="line-number">6</span>
-                                <span class="code-text"> <span class="string">"HTML & CSS"</span>,</span>
-                            </div>
-                            <div class="code-line">
-                                <span class="line-number">7</span>
-                                <span class="code-text"> <span class="string">"Web Design"</span></span>
-                            </div>
-                            <div class="code-line">
-                                <span class="line-number">8</span>
-                                <span class="code-text"> ],</span>
-                            </div>
-                            <div class="code-line">
-                                <span class="line-number">9</span>
-                                <span class="code-text"> passion: <span class="string">"Building Amazing Web
-                                        Experiences"</span></span>
-                            </div>
-                            <div class="code-line">
-                                <span class="line-number">10</span>
-                                <span class="code-text">};</span>
-                            </div>
-                            <div class="code-line">
-                                <span class="line-number">11</span>
-                                <span class="code-text"></span>
-                            </div>
-                            <div class="code-line">
-                                <span class="line-number">12</span>
-                                <span class="code-text"><span class="comment">// Let's build something great!
-                                        🚀</span></span>
-                            </div>
-                        </div>
+            <div class="hero-right">
+                <div class="profile-image-container">
+                    <!-- Placeholder for user's image, using a gradient for now matching the style -->
+                    <div class="profile-image-placeholder">
+                        <i class="fas fa-user-circle" style="font-size: 200px; color: rgba(255,255,255,0.1);"></i>
                     </div>
+                    <!-- If they have an image, it would go here -->
+                    <!-- <img src="profile.png" alt="John Mark" class="profile-image"> -->
                 </div>
             </div>
+        </div>
+
+        <div class="language-selector">
+            <span class="lang-flag">🇺🇸</span>
+            <span class="lang-flag">🇵🇭</span>
         </div>
     </section>
 
@@ -245,7 +209,7 @@
         </div>
 
         <div class="projects-grid" id="projectsGrid">
-            <img src="project-hero.svg" alt="Project Hero"
+            <img src="project-hero.png" alt="Project Hero"
                 style="width: 100%; height: auto; border-radius: var(--radius-lg);">
         </div>
     </section>
@@ -269,13 +233,13 @@
                 </p>
 
                 <div class="contact-methods">
-                    <div class="contact-method" onclick="window.location.href='mailto:johnmark@example.com'">
+                    <div class="contact-method" onclick="window.location.href='mailto:johnmarkcamancho817@gmail.com'">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-text">
                             <h4>Email</h4>
-                            <p>johnmark@example.com</p>
+                            <p>johnmarkcamancho817@gmail.com</p>
                         </div>
                     </div>
 
@@ -330,9 +294,9 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="logo">Jiemm's Portfolio</div>
+            <div class="logo">John Mark's Portfolio</div>
             <p style="color: var(--text-secondary); margin: 0;">
-                © 2026 Jiemm's Portfolio. All rights reserved.
+                © 2026 John Mark's Portfolio. All rights reserved.
             </p>
             <div class="social-links">
                 <a href="https://github.com/johnmarkcamancho" target="_blank" class="social-btn" title="GitHub">
@@ -344,7 +308,7 @@
                 <a href="https://twitter.com/johnmarkcamancho" target="_blank" class="social-btn" title="Twitter">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="mailto:johnmark@example.com" class="social-btn" title="Email">
+                <a href="mailto:johnmarkcamancho817@gmail.com" class="social-btn" title="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
