@@ -294,33 +294,7 @@ a:hover {
   animation: fadeInLeft 0.8s ease-out;
 }
 
-.hero-buttons-top {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 40px;
-}
 
-.icon-circle {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: transparent;
-  border: 1px solid var(--border-color);
-  color: var(--text-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s;
-  font-size: 1.1rem;
-}
-
-.icon-circle:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
 
 .greeting {
   font-size: 1.25rem;
@@ -927,9 +901,7 @@ a:hover {
     max-width: 600px;
   }
 
-  .hero-buttons-top {
-    display: none;
-  }
+
 
   .nav-links {
     display: none;
