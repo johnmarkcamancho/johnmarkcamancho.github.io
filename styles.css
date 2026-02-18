@@ -1087,7 +1087,12 @@ a:hover {
 
 .caption-text {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   margin-top: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  background: var(--bg-secondary);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
 }
