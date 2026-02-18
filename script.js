@@ -421,3 +421,58 @@ document.addEventListener('keydown', (e) => {
         }, 2000);
     }
 });
+
+// ===========================
+// IMAGE MODAL FUNCTIONS
+// ===========================
+function openModal(src) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("img01");
+    if (modal && modalImg) {
+        modal.style.display = "block";
+        modalImg.src = src;
+        // Disable scrolling when modal is open
+        document.body.style.overflow = "hidden";
+
+        // Add zoomed class for animation
+        setTimeout(() => {
+            modalImg.style.transform = "scale(1)";
+        }, 10);
+    }
+}
+
+function closeModal() {
+    const modal = document.getElementById("imageModal");
+    if (modal) {
+        modal.style.display = "none";
+        // Enable scrolling when modal is closed
+        document.body.style.overflow = "auto";
+    }
+}
+
+// Close modal when clicking outside the image
+window.onclick = function (event) {
+    const modal = document.getElementById("imageModal");
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
+// Close modal with Escape key
+document.addEventListener('keydown', function (event) {
+    if (event.key === "Escape") {
+        closeModal();
+    }
+});
+
+// Attach modal to project hero image
+document.addEventListener('DOMContentLoaded', () => {
+    const projectImg = document.querySelector('img.project-hero-img');
+    if (projectImg) {
+        projectImg.classList.add('clickable-image');
+        projectImg.title = "Click to enlarge";
+        projectImg.addEventListener('click', () => {
+            openModal(projectImg.src);
+        });
+    }
+});
