@@ -143,11 +143,11 @@ Update CSS variables in `styles.css` (lines 8-31):
 
 ## 🔧 Browser Support
 
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-- Opera
+- **Chrome (recommended)**
+- **Firefox**
+- **Safari**
+- **Edge**
+- **Opera**
 
 ## 📄 License
 
