@@ -638,6 +638,14 @@ a:hover {
 /* ===========================
    PROJECTS SECTION
    =========================== */
+.project-hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  display: block;
+  transition: transform var(--transition-base);
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
@@ -1069,6 +1077,19 @@ a:hover {
 
   .section {
     padding: var(--space-xl) var(--space-md);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    justify-items: center;
+  }
+
+  .project-hero-img {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-md);
   }
 
   .contact-container {
