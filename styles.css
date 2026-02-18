@@ -566,7 +566,8 @@ a:hover {
    =========================== */
 .project-hero-img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
   border-radius: var(--radius-lg);
   display: block;
   transition: transform var(--transition-base);
