@@ -32,9 +32,9 @@
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
-  --space-xl: 3rem;
-  --space-2xl: 4rem;
-  --space-3xl: 6rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
 
   /* Typography */
   --font-primary: 'Inter', sans-serif;
@@ -48,8 +48,8 @@
   --text-2xl: 1.5rem;
   --text-3xl: 2rem;
   --text-4xl: 2.5rem;
-  --text-5xl: 3.5rem;
-  --text-6xl: 4.5rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.5rem;
 
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -361,7 +361,7 @@ a:hover {
   width: 100%;
   margin: 0 auto;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .hero-left {
@@ -405,27 +405,27 @@ a:hover {
 }
 
 .hero-name {
-  font-size: 5.5rem;
+  font-size: 4rem;
   font-weight: 800;
   line-height: 1.1;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: var(--text-primary);
   letter-spacing: -1px;
 }
 
 .hero-role {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   color: var(--primary);
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero-description {
   color: var(--text-secondary);
-  font-size: 1.1rem;
+  font-size: 1rem;
   max-width: 520px;
-  margin-bottom: 3rem;
-  line-height: 1.7;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
 .btn-primary-pill {
@@ -552,15 +552,15 @@ a:hover {
    =========================== */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-md);
 }
 
 .skill-card {
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: var(--space-xl);
+  padding: var(--space-md);
   transition: all var(--transition-base);
   position: relative;
   overflow: hidden;
@@ -590,15 +590,15 @@ a:hover {
 }
 
 .skill-icon {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   background: var(--gradient-card);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--text-3xl);
-  margin-bottom: var(--space-md);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
   transition: transform var(--transition-bounce);
   color: var(--primary);
 }
@@ -608,15 +608,16 @@ a:hover {
 }
 
 .skill-title {
-  margin-bottom: var(--space-sm);
+  margin-bottom: 0.5rem;
   color: var(--text-primary);
-  font-size: var(--text-xl);
+  font-size: 1.1rem;
 }
 
 .skill-description {
   color: var(--text-secondary);
-  margin-bottom: var(--space-md);
-  font-size: var(--text-sm);
+  margin-bottom: var(--space-sm);
+  font-size: 0.85rem;
+  line-height: 1.5;
 }
 
 .skill-tags {
@@ -1052,42 +1053,45 @@ a:hover {
 
 @media (max-width: 768px) {
   .hero-name {
-    font-size: 3rem;
-    /* Slightly smaller for mobile */
+    font-size: 2.5rem;
     line-height: 1.1;
   }
 
   .hero-role {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
   }
 
   .profile-image-placeholder {
     width: 100%;
-    max-width: 320px;
-    /* Limit width */
-    height: 380px;
-    /* Limit height */
+    max-width: 280px;
+    height: 340px;
     margin: 0 auto;
   }
 
   .btn-primary-pill {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
   }
 
   .section {
-    padding: var(--space-xl) var(--space-md);
+    padding: var(--space-lg) var(--space-sm);
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    gap: var(--space-md);
     justify-items: center;
   }
 
   .project-hero-img {
-    width: 90%;
-    max-width: 400px;
+    width: 80%;
+    max-width: 350px;
     margin: 0 auto;
     box-shadow: var(--shadow-md);
   }
@@ -1105,18 +1109,31 @@ a:hover {
 
 @media (max-width: 480px) {
   .hero-name {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .hero-role {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
   }
 
   .profile-image-placeholder {
-    height: 320px;
+    height: 280px;
+    max-width: 240px;
   }
 
   .logo-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .menu-toggle {
-    transform: scale(0.9);
+    transform: scale(0.85);
+  }
+
+  .project-hero-img {
+    width: 85%;
   }
 }
