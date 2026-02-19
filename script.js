@@ -465,14 +465,14 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
-// Attach modal to project hero image
+// Attach modal to project images
 document.addEventListener('DOMContentLoaded', () => {
-    const projectImg = document.querySelector('img.project-hero-img');
-    if (projectImg) {
-        projectImg.classList.add('clickable-image');
-        projectImg.title = "Click to enlarge";
-        projectImg.addEventListener('click', () => {
-            openModal(projectImg.src);
+    const projectImages = document.querySelectorAll('img.project-hero-img');
+    projectImages.forEach(img => {
+        img.classList.add('clickable-image');
+        img.title = "Click to enlarge";
+        img.addEventListener('click', () => {
+            openModal(img.src);
         });
-    }
+    });
 });

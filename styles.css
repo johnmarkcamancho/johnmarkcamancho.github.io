@@ -374,6 +374,18 @@ a:hover {
   border: 1px solid var(--border-color);
 }
 
+.profile-image {
+  width: 400px;
+  /* Adjust as needed */
+  height: 500px;
+  /* Adjust as needed */
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
 .profile-image-placeholder::before {
   content: '';
   position: absolute;
